@@ -57,7 +57,7 @@ def handle_message(message):
         bot.send_message(chat_id, "لطفاً ابتدا یک لینک یوتیوب ارسال کنید.")
 
 # ---- Webhook برای Railway ----
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/' + api_key, methods=['POST'])
 def getMessage():
