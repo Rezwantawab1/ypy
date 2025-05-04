@@ -72,6 +72,6 @@ def webhook():
     bot.set_webhook(url='ypy-production.up.railway.app' + api_key)
     return 'Webhook set', 200
 
-if name == "main":
+if name == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host="0.0.0.0", port=port)
