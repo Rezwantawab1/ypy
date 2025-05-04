@@ -69,7 +69,7 @@ def getMessage():
 @app.route('/')
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://YOUR-RAILWAY-APP-NAME.up.railway.app/' + api_key)
+    bot.set_webhook(url='ypy-production.up.railway.app' + api_key)
     return 'Webhook set', 200
 
 if name == "main":
